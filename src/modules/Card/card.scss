@@ -1,0 +1,52 @@
+.main-page-card {
+  .img-sqr {
+    height: 150px;
+    width: 150px;
+  }
+  img {
+    object-fit: cover;
+    border: #ffffff 5px solid;
+  }
+  .card-title {
+    margin-top: 14px;
+  }
+  
+}
+
+.card {
+  box-shadow: 0px 0px 8px 0px black;
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 25px 0px black;
+  }
+}
+.card-img-top {
+  border: #ffffff 3px solid;
+}
+
+
+.card {
+  transform-style: preserve-3d;
+  transition: transform .5s linear;
+}
+.back, .front {
+  
+  width: 100%;
+  backface-visibility: hidden;
+}
+.back {
+  position: absolute;
+  transform: rotateY(180deg);
+}
+
+.rotate {
+  transform: rotateY(180deg);
+}
+
+.card-rotate-btn {
+  height: 30px;
+}
+
+.inactive {
+  opacity: .5;
+}
